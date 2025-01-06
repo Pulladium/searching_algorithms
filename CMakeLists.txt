@@ -15,6 +15,8 @@ FetchContent_MakeAvailable(spdlog)
 add_executable(search_algorithms
         main.cpp
         src/brute_force.cpp
+        src/boyer_moore.cpp
+        include/boyer_moore.h
 )
 
 # Добавляем директории с заголовочными файлами
