@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(boyer_mourse)
+project(searching_algorithms)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -11,18 +11,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(spdlog)
 
-# Добавляем исполняемый файл
 add_executable(search_algorithms
         main.cpp
         src/brute_force.cpp
         src/boyer_moore.cpp
-        include/boyer_moore.h
 )
 
-# Добавляем директории с заголовочными файлами
 target_include_directories(search_algorithms PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-# Линкуем с spdlog (исправлено имя цели)
 target_link_libraries(search_algorithms PRIVATE spdlog::spdlog)
