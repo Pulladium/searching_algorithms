@@ -30,8 +30,7 @@ This project consists of two main classes:
 ### 3.1 Building the Project in Linux
 1. Clone the repository and navigate to the project root.  
 2. Run the following commands:
-  - ```bash mkdir```
-  - ```build ```
+  - ```mkdir build ```
   - ```cd build```
   - ```cmake ..```
   - ```make```
